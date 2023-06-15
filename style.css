@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=EB+Garamond&family=Playfair:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=EB+Garamond&family=Playfair:wght@700&family=Public+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Dancing+Script:wght@600&family=EB+Garamond&family=Playfair:wght@700&family=Public+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Playfair:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital@1&display=swap');
+body{
+    margin: 0;
+    width:100vw;
+
+    overflow-x:hidden;
+}
+
+.wrapper{
+ 
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    min-width: 100vh;
+    background: linear-gradient( rgba(0, 0, 0, 0.607), rgba(0, 0, 0, 0.9) ), url(https://assets.gq.ru/photos/5e74b4ff8c8d8a0008a2e563/master/w_1600%2Cc_limit/NgTztNfWhFGy0mVF1vQS7NBcfRlIdHRfbh7vd3Ii38yj6dlRnYsUAtkNNQEW-0y_uXkaG88U5np8k2qkCu01zw==.png);
+    background-repeat: no-repeat;
+   }
+   .navbar{
+    background:#392f26;
+   }
+   .nav-link , .navbar-brand{
+    color: #f4f4f4;
+    cursor: pointer;
+   }
+   .nav-link{
+    margin-right: 1em !important;
+   }
+   .nav-link:hover{
+    background: #f4f4f4;
+    color: #392f26;
+   }
+   .navbar-collapse{
+    justify-content: flex-end;
+   }
+   .navbar-toggler{
+     background:#fff !important;
+   }
+   .description{
+    position: absolute;
+    top: 30%;
+    margin: auto;
+    padding: 2em;
+}
+.description h1{
+ color:#ffffff ;
+ font-family: 'Dancing Script', cursive;
+ font-size: 90px;
+}
+.description p{
+ color:#ffffff;
+ font-size: 20px;
+ width: 50%;
+ margin: 0 auto 0 auto;
+font-family: 'EB Garamond', serif;
+
+}
+.about{
+    margin: 4em 0;
+    padding-top: 40px;
+    position: relative;
+    
+   }
+   .about h2{
+    color:#392f26;
+    margin: 0 auto 0 auto;
+font-size: 30px;
+font-family: 'Public Sans', sans-serif;
+   }
+.about p{
+    color:#392f26;
+    font-size: 40px;
+    font-family: 'Caveat', cursive;
+    width: 50%;
+    margin: 0 auto 0 auto;
+   
+}
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  .menuInfoBottom p {
+    font-family: 'EB Garamond', serif;
+}
+  
+  .menuInfoTop h1 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 100;
+    font-size: 2.4rem;
+  }
+  
+  .containerMain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:60vh;
+    background: #ffffff;
+  }
+  
+  .menuContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background:#392f26b1 ;
+  }
+  
+  .menuItem {
+    position: relative;
+    overflow: hidden;
+    width: 350px;
+    height: 280px;
+    background-size: cover;
+    color: white;
+    border-radius: 5px;
+    margin: 10px;
+  }
+  
+  #menuItemLunch {
+    background-image: url(https://grandkulinar.ru/uploads/posts/2019-03/1552916634_pasta-lingvini-s-krevetkami-i-limonnym-maslom.jpg);
+  }
+  
+  #menuItemDinner {
+    background-image: url(https://static-cdn4-2.vigbo.tech/u45923/66532/blog/4846238/5795385/76475229/1000-794236b732a81ce8d2a39fe145096d6a.jpg);
+  }
+  
+  #menuItemTaster {
+    background-image: url(https://static.sobaka.ru/images/image/01/55/53/89/_normal.jpg?v=1651149023);
+  }
+  
+  .menuInfoTop {
+    background: rgba(0,0,0,0.5);
+    padding: 5px 20px;
+  }
+  
+  .menuInfoBottom {
+    position: absolute;
+    bottom: -120px;
+    width: 100%;
+    max-height: 40%;
+    padding: 15px 20px;
+    background: rgba(0,0,0,0.5);
+  }
+  
+  .menuItem:hover > .menuInfoBottom {
+    display: inline;
+    transition: ease 0.8s;
+    bottom: 0;
+  }
+.new h2{
+    font-family: 'Public Sans', sans-serif;
+    font-size: 50px;
+padding-top: 50px;
+}
+.events h2{
+    color:#392f26;
+    padding-top: 50px;
+    padding-bottom: 35px;
+font-size: 30px;
+font-family: 'Public Sans', sans-serif;
+}
+
+
+
+.info{
+    margin: 4em 0;
+    height: 30vh;
+    position: relative; 
+    padding-bottom: 450px;
+   }
+
+   .blog .card{
+    box-shadow: 0 0 20px#392f26;;
+   }
+
+.card-title h3{
+    color:#392f26;
+    font-family: 'Dancing Script', cursive;
+    font-size: 45px;
+}
+.card-text{
+    color:#392f26;
+    font-family: 'EB Garamond', serif;
+    font-size: 20px;
+}
+.slider {
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 50px;
+}
+
+.slider > div {
+  flex-shrink: 0;
+  width: 500px; 
+  height: 300px; 
+}
+
+.slider > div img {
+  max-width: 100%;
+  height: 100%; 
+  object-fit: cover; 
+
+}
+.number_wrap {
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-around;
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+ 
+  
+  .number_wrap .item p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+color: #392f26;
+    
+  }
+  
+  .number, .number1, .number2, .number3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      width: 200px;
+      height: 200px;
+      color:  #ffffff;
+      font-size: 50px;
+      font-family: sans-serif;
+      font-weight: bold;
+      padding: 20px;
+    border-radius: 100%;
+    background-color: #392f26c6;
+    box-shadow: 0px 0px 20px #392f26c6;
+  }
+  .ever h2{
+    color:#392f26;
+    font-family:  'Bodoni Moda', serif;
+    font-size: 60px;
+    padding-top: 100px;
+}
+
+
+.contact h2{
+    color:#392f26;
+    padding-top: 100px;
+    padding-bottom: 35px;
+font-size: 30px;
+font-family: 'Public Sans', sans-serif;
+}
+.contact p{
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    color: #392f26;
+}
+
+
+footer {
+       padding: 40px 40px ;
+        background: #392f26;
+        color: white;
+        
+ 
+      }
+footer p{
+    font-family: 'Public Sans', sans-serif;
+}
+
+ .parent-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+ .modal-button {
+  text-align: center;
+ 
+}
+ .modal-wrapper {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+
+
+.modal-open {
+  cursor: pointer;
+  background-color: #392f26;
+  color: #fff;
+  border-radius: 2rem;
+  padding: 1.5rem 3rem;
+  border: none;
+  display: inline-block;
+  
+}
+
+
+.modal-content {
+  max-width: 500px;
+  margin: 10% auto;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #392f26;
+  cursor: pointer;
+}
+
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+label {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="tel"] {
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border: none;
+}
+
+
+.submit-button {
+  background-color: #392f26;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 1.5rem 4rem;
+  border-radius: 2rem;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  margin-top: 1.5rem;
+}
+
+.submit-button::before {
+  content: '';
+  position: absolute;
+  top: -120%;
+  left: -120%;
+  width: 300%;
+  height: 300%;
+  background-color: rgba(255, 255, 255, 0.8);
+  transform: rotate(45deg);
+  transition: all 0.3s ease-in-out;
+}
+
+.submit-button:hover::before {
+  top: -30%;
+  left: -30%;
+}
+
+.submit-button:hover {
+  color: #392f26;
+  background-color: #fff;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css"> 
+   
+    <link rel="stylesheet" href="style.css">
+
+<style>
+  footer{
+    padding: 40px 40px ;
+        background: #392f26;
+        color: white;
+        position: fixed;
+  bottom: 0;
+  width: 100%;
+  }
+ 
+</style>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top ">
+        <a class="navbar-brand" href="#Главная">Grazie mille</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+     <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav mr-4">
+            
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Restaurant</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="index1.html">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="index2.html">NEW</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link " href="index3.html">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="index4.html">Contact</a>
+              </li>
+          </ul>
+          
+        </div>
+     </nav> 
+
+     <div id="Контакт">
+        <div class="contact text-center"><h2>TABLE RESERVATION</h2>
+        <p>We will call you</p></div> 
+        
+       
+        <div class="parent-container">
+          <div class="modal-button">
+        
+<button class="modal-open ">fill out the form</button>
+</div>
+</div>
+
+<div class="modal-wrapper">
+  <div class="modal-content">
+    
+    <form action="#" method="post">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+      <button class="submit-button">Send</button>
+    </form>
+    <span class="close">&times;</span>
+  </div>
+</div>
+       <footer>
+            <div class="foot text-center"><p>Company © Grazie mille. All rights reserved.</p></div>
+            
+          </footer> 
+       <script>
+        const modalOpen = document.querySelector('.modal-open');
+const modalWrapper = document.querySelector('.modal-wrapper');
+const closeButton = document.querySelector('.close');
+
+
+modalOpen.addEventListener('click', () => {
+  modalWrapper.style.display = 'block';
+});
+
+
+closeButton.addEventListener('click', () => {
+  modalWrapper.style.display = 'none';
+});
+
+
+window.addEventListener('click', (event) => {
+  if (event.target == modalWrapper) {
+    modalWrapper.style.display = 'none';
+  }
+});
+       </script>
+        
+          
+</body>
+</html>

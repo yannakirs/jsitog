@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top ">
+        <a class="navbar-brand" href="index.html">Grazie mille</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+     <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav mr-4">
+            
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Restaurant</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="index1.html">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="index2.html">NEW</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link " href="index3.html">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="index4.html">Contact</a>
+              </li>
+          </ul>
+          
+        </div>
+     </nav>
+
+     <div id="Мы">
+        <div class="row">
+            <div class=" col-sm-12 col-md-12 col-l-12 col-xl-12 ">
+           
+             <div class="about text-center"><h2>ABOUT OUR RESTAURANT</h2><br>
+             <p>Our Italian restaurant opened in 2019. We have interesting events and a wide selection of dishes and drinks from the best Italian recipes. Come and enjoy the real Italian taste!</p></div>
+            </div>
+        </div> 
+        </div>
+        <div class="slider">
+          <div><img src="1.jpeg" alt=""></div>
+          <div><img src="820x0.jpeg" alt=""></div>
+          <div><img src="b42e.jpeg" alt=""></div>
+          <div><img src="FinHow-17-0.jpeg" alt=""></div>
+        </div>
+        <footer>
+            <div class="foot text-center"><p>Company © Grazie mille. All rights reserved.</p></div>
+          </footer>
+          <script>
+            const slider = document.querySelector('.slider');
+            const slides = slider.querySelectorAll('div');
+          
+            let currentSlide = 0;
+            let slideInterval;
+          
+            function startSlide() {
+              slideInterval = setInterval(() => {
+                slides[currentSlide].classList.remove('active');
+                currentSlide = (currentSlide + 1) % slides.length;
+                slides[currentSlide].classList.add('active');
+                slider.scrollLeft = currentSlide * slides[0].offsetWidth;
+              }, 3000);
+            }
+          
+            function stopSlide() {
+              clearInterval(slideInterval);
+            }
+          
+            slider.addEventListener('mouseover', stopSlide);
+            slider.addEventListener('mouseout', startSlide);
+          
+            startSlide();
+          </script>
+      
+</body>
+</html>
